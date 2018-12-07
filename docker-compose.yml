@@ -1,0 +1,7 @@
+version: '3'
+services:
+  twilio:
+    build: .
+    command: python3 -c 'import index; index.handler(None, None)'
+    ports:
+      - 80:80
